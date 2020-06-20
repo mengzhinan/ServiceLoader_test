@@ -1,2 +1,4 @@
+include ':serviceLoaderLib'
+include ':autoServiceLib'
 include ':app'
 rootProject.name = "ServiceLoader_test"
