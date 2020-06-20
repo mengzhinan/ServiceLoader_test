@@ -5,8 +5,7 @@ package com.duke.interfacelib;
  * @DateTime: 2020-06-20 15:03
  * @Description:
  */
-public interface Display {
+public interface DisplayB extends Base{
 
-    String getName();
 
 }
