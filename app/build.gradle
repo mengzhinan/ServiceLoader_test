@@ -52,6 +52,7 @@ dependencies {
     yingyongbaoImplementation project(path: ':aLib')
     yingyongbaoImplementation project(path: ':bLib')
 
+    xiaomiImplementation project(path: ':aLib')
     xiaomiImplementation project(path: ':bLib')
 
 }

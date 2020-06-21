@@ -1,8 +1,8 @@
 package com.duke.serviceloader_test
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.duke.interfacelib.Base
 import com.duke.interfacelib.DisplayA
 import com.duke.interfacelib.DisplayB
 
@@ -18,16 +18,15 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-//        var baseInterface: Base? = null;
-//
-//        if(1){
-//            baseInterface = ServiceHelper.getService(DisplayA::class.java)
-//        }else if(2){
-//            baseInterface = ServiceHelper.getService(DisplayB::class.java)
-//        }
-//
-//        baseInterface?.name
 
+        val baseInterface1 = ServiceHelper.getService(DisplayA::class.java)
+        if (baseInterface1 != null) {
+            Log.e("ServiceHelper", "str = ${baseInterface1.name}")
+        }
+        val baseInterface2 = ServiceHelper.getService(DisplayB::class.java)
+        if (baseInterface2 != null) {
+            Log.e("ServiceHelper", "str = ${baseInterface2.name}")
+        }
 
     }
 }
